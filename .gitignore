@@ -1,0 +1,17 @@
+build/
+install/
+log/
+devel/
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+.rviz/
+.rviz2/
+.gazebo/
+*.bak
+*.swp
+*~
+*.SLDASM
+*.SLDPRT
+*.SLDDRW

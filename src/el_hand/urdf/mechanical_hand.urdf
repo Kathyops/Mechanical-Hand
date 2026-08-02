@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="El montaj.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0057702 0.0055415 0.11835"
+        rpy="0 0 0" />
+      <mass
+        value="0.089489" />
+      <inertia
+        ixx="4.6427E-05"
+        ixy="-1.5007E-05"
+        ixz="6.5003E-09"
+        iyy="2.7104E-05"
+        iyz="3.622E-08"
+        izz="6.9166E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint20"
+    type="continuous">
+    <origin
+      xyz="0 -0.001891 -0.02808"
+      rpy="-2.8239 0 0" />
+    <parent
+      link="link19" />
+    <child
+      link="link20" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.0029673 0.011408 -0.0071385"
+        rpy="0 0 0" />
+      <mass
+        value="0.00094799" />
+      <inertia
+        ixx="3.0473E-08"
+        ixy="-1.6995E-09"
+        ixz="-7.1895E-10"
+        iyy="2.6525E-08"
+        iyz="-2.1331E-09"
+        izz="2.0271E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="continuous">
+    <origin
+      xyz="0.044064 -0.10985 -0.016457"
+      rpy="-1.5708 -0.069621 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="-0.000211926923281119 -0.0151633113646847 -0.000738285287891244"
+        rpy="0 0 0" />
+      <mass
+        value="0.00269063759841093" />
+      <inertia
+        ixx="1.20242935294969E-07"
+        ixy="5.32337315359262E-13"
+        ixz="5.86575457813599E-11"
+        iyy="8.84498294911988E-08"
+        iyz="-1.45278700793005E-09"
+        izz="1.381616089928E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="continuous">
+    <origin
+      xyz="0.0038289 0.014543 -0.00881"
+      rpy="0 0 2.8842" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="-0.00904364955402194 0.000937546194051203 -0.000212060583147197"
+        rpy="0 0 0" />
+      <mass
+        value="0.00171949897367765" />
+      <inertia
+        ixx="3.71753934995645E-08"
+        ixy="-2.65337027579137E-09"
+        ixz="3.24180458643964E-12"
+        iyy="4.48127214138506E-08"
+        iyz="1.87654494640874E-12"
+        izz="4.38545216100238E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="continuous">
+    <origin
+      xyz="0 -0.029839 -0.0011674"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="-0.000346282036236156 -0.000210613475121767 -0.0095541884336357"
+        rpy="0 0 0" />
+      <mass
+        value="0.00142350531394084" />
+      <inertia
+        ixx="3.22795505153294E-08"
+        ixy="-1.23670468443233E-11"
+        ixz="-2.65188402030117E-09"
+        iyy="3.38968763547072E-08"
+        iyz="-1.23547713217483E-11"
+        izz="2.48779270626468E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="continuous">
+    <origin
+      xyz="-0.019171 0.0012502 0"
+      rpy="1.5708 0 0.95993" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="-0.00128388847113709 0.0132866727228045 0.00793939368481823"
+        rpy="0 0 0" />
+      <mass
+        value="0.00157789963722504" />
+      <inertia
+        ixx="6.10942530339738E-08"
+        ixy="9.49554696329166E-10"
+        ixz="-2.81216710881347E-10"
+        iyy="5.13401890117092E-08"
+        iyz="2.91173427577847E-09"
+        izz="4.24883755101783E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="continuous">
+    <origin
+      xyz="0.0219766447714203 -0.10984918453677 -0.0274219605014455"
+      rpy="-1.5707963267949 0.0622345070436849 -3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="-4.83593322211547E-05 -0.0181923155265316 -0.000885783589917338"
+        rpy="0 0 0" />
+      <mass
+        value="0.00464662571494519" />
+      <inertia
+        ixx="2.9890284210031E-07"
+        ixy="1.38296693897771E-12"
+        ixz="1.45516220885504E-10"
+        iyy="2.19871298461641E-07"
+        iyz="-3.61116458948722E-09"
+        izz="3.43447323682334E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="continuous">
+    <origin
+      xyz="-0.00166971116875515 0.0172630182903683 0.00880955926294877"
+      rpy="-3.01260352957191 0 0.0964219229542798" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="link7">
+    <inertial>
+      <origin
+        xyz="0.00114972355059678 0.000624828457262569 -5.71127863325388E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00296941998514358" />
+      <inertia
+        ixx="9.24092840895585E-08"
+        ixy="-6.59540342440883E-09"
+        ixz="3.6798659003754E-12"
+        iyy="1.1137818590291E-07"
+        iyz="3.25713539386651E-12"
+        izz="1.09028599484304E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint7"
+    type="fixed">
+    <origin
+      xyz="-4.83520540940953E-05 -0.0478 -0.000900544274470352"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="link6" />
+    <child
+      link="link7" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link8">
+    <inertial>
+      <origin
+        xyz="-0.00041554664380479 1.45045912930755E-06 -0.0114619858620957"
+        rpy="0 0 0" />
+      <mass
+        value="0.00245824506155157" />
+      <inertia
+        ixx="8.02341378648483E-08"
+        ixy="-3.04055380981731E-11"
+        ixz="-6.59429594220057E-09"
+        iyy="8.42544381573884E-08"
+        iyz="-3.26348338947897E-11"
+        izz="6.18413521480346E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint8"
+    type="continuous">
+    <origin
+      xyz="-0.011 0.001 0"
+      rpy="1.5707963267949 0 1.57079632679491" />
+    <parent
+      link="link7" />
+    <child
+      link="link8" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link9">
+    <inertial>
+      <origin
+        xyz="-0.00030250621326541 -0.0169696100118578 0.00733130721594823"
+        rpy="0 0 0" />
+      <mass
+        value="0.00242477157072776" />
+      <inertia
+        ixx="1.30108488801237E-07"
+        ixy="-1.85792554268557E-09"
+        ixz="-5.17922988528539E-12"
+        iyy="8.79041117497421E-08"
+        iyz="3.56337182704225E-10"
+        izz="1.19630259954236E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint9"
+    type="continuous">
+    <origin
+      xyz="-0.00712182270798424 -0.109808743799716 -0.0296044255799715"
+      rpy="1.5707963267949 -0.0572092712069291 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link9" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link10">
+    <inertial>
+      <origin
+        xyz="-4.13677666774165E-05 -0.0191929101190234 -0.000934483060109417"
+        rpy="0 0 0" />
+      <mass
+        value="0.0054562680725861" />
+      <inertia
+        ixx="3.90655364490472E-07"
+        ixy="1.70655842036596E-12"
+        ixz="1.90577430671984E-10"
+        iyy="2.87363176830839E-07"
+        iyz="-4.71990521968074E-09"
+        izz="4.48870928227469E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint10"
+    type="continuous">
+    <origin
+      xyz="-0.000556162602004955 -0.02334338352005 0.00905000000000004"
+      rpy="-3.14159265358979 0 3.11777188213839" />
+    <parent
+      link="link9" />
+    <child
+      link="link10" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="link11">
+    <inertial>
+      <origin
+        xyz="-0.0114470791263435 0.00118665812386455 -4.18055766376983E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00348681228230804" />
+      <inertia
+        ixx="1.20774993749136E-07"
+        ixy="-8.62031303928819E-09"
+        ixz="6.63335903025E-12"
+        iyy="1.45566420284713E-07"
+        iyz="4.82545649890434E-12"
+        izz="1.42496219425109E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint11"
+    type="continuous">
+    <origin
+      xyz="0 -0.0377690000000004 -0.00147757420956605"
+      rpy="1.5707963267949 -0.0344768686245256 1.5707963267949" />
+    <parent
+      link="link10" />
+    <child
+      link="link11" />
+    <axis
+      xyz="0 0 -0.999999999999998" />
+  </joint>
+  <link
+    name="link12">
+    <inertial>
+      <origin
+        xyz="-0.000438293000656842 -3.96946074236078E-05 -0.0120930859874715"
+        rpy="0 0 0" />
+      <mass
+        value="0.00288670374518579" />
+      <inertia
+        ixx="1.04871606154265E-07"
+        ixy="-4.02284984140678E-11"
+        ixz="-8.61611235074666E-09"
+        iyy="1.10125974334027E-07"
+        iyz="-4.03253046743262E-11"
+        izz="8.08256572102425E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link12.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link12.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint12"
+    type="continuous">
+    <origin
+      xyz="-0.0242650000000002 0.00158250000000003 0"
+      rpy="1.57079632679491 0 1.566375530409" />
+    <parent
+      link="link11" />
+    <child
+      link="link12" />
+    <axis
+      xyz="0 -0.999999999999998 0" />
+  </joint>
+  <link
+    name="link13">
+    <inertial>
+      <origin
+        xyz="-0.00195294557006497 -0.0157161692093838 0.00719786783744288"
+        rpy="0 0 0" />
+      <mass
+        value="0.00205073145389777" />
+      <inertia
+        ixx="9.99576448071782E-08"
+        ixy="-1.45086484604469E-09"
+        ixz="1.92285201773686E-10"
+        iyy="6.86843571557749E-08"
+        iyz="-9.2838297620759E-10"
+        izz="8.82308053481651E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link13.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link13.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint13"
+    type="continuous">
+    <origin
+      xyz="-0.0321569638699311 -0.109808743799717 -0.0270188141613376"
+      rpy="1.5707963267949 -0.0817735467632935 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link13" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link14">
+    <inertial>
+      <origin
+        xyz="0.000361620829988168 -0.0181923123605247 -0.00088578719171753"
+        rpy="0 0 0" />
+      <mass
+        value="0.00464662524385175" />
+      <inertia
+        ixx="2.98902644269144E-07"
+        ixy="1.33682633341544E-12"
+        ixz="1.46020250071625E-10"
+        iyy="2.19871286123852E-07"
+        iyz="-3.61122516595562E-09"
+        izz="3.43447692321601E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link14.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link14.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint14"
+    type="continuous">
+    <origin
+      xyz="-0.00208488225397547 -0.0214568288789367 0.00904999999999886"
+      rpy="-2.98578372579267 0 3.04473035163628" />
+    <parent
+      link="link13" />
+    <child
+      link="link14" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="link15">
+    <inertial>
+      <origin
+        xyz="0.0011497 0.00062483 -3.8835E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0029694" />
+      <inertia
+        ixx="9.2409E-08"
+        ixy="-6.5954E-09"
+        ixz="5.404E-12"
+        iyy="1.1138E-07"
+        iyz="3.7172E-12"
+        izz="1.0903E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link15.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link15.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint15"
+    type="fixed">
+    <origin
+      xyz="0.000361639532973211 -0.0477999999999942 -0.000900544274473586"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="link14" />
+    <child
+      link="link15" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link16">
+    <inertial>
+      <origin
+        xyz="-0.00041544 1.5727E-06 -0.011463"
+        rpy="0 0 0" />
+      <mass
+        value="0.0024584" />
+      <inertia
+        ixx="8.024E-08"
+        ixy="-3.0858E-11"
+        ixz="-6.5924E-09"
+        iyy="8.426E-08"
+        iyz="-3.0907E-11"
+        izz="6.1843E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link16.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link16.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint16"
+    type="continuous">
+    <origin
+      xyz="-0.011 0.00100000000000003 0"
+      rpy="1.5707963267949 0 1.57079632679488" />
+    <parent
+      link="link15" />
+    <child
+      link="link16" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link17">
+    <inertial>
+      <origin
+        xyz="-0.011018 -0.011227 6.7972E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0069932" />
+      <inertia
+        ixx="5.7229E-07"
+        ixy="-6.2772E-08"
+        ixz="1.3814E-09"
+        iyy="7.8511E-07"
+        iyz="1.5613E-08"
+        izz="9.5384E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link17.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link17.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint17"
+    type="continuous">
+    <origin
+      xyz="-0.030306696891416 -0.118358743799717 0.00252343088146283"
+      rpy="-2.04062006152356 1.48772480012052 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="link17" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="link18">
+    <inertial>
+      <origin
+        xyz="0.000508270041586073 -0.00108845976845882 -0.0193674780845998"
+        rpy="0 0 0" />
+      <mass
+        value="0.00270952392545733" />
+      <inertia
+        ixx="1.24020613200127E-07"
+        ixy="9.48661656020798E-09"
+        ixz="6.97930102649747E-09"
+        iyy="1.08025831261747E-07"
+        iyz="-1.49795645246846E-08"
+        izz="1.43652964187033E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link18.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link18.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint18"
+    type="continuous">
+    <origin
+      xyz="-0.0132385365129055 -0.0116305778207174 0.000250000000000125"
+      rpy="1.5707963267949 -0.0639847385500566 -2.42076146990601" />
+    <parent
+      link="link17" />
+    <child
+      link="link18" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link19">
+    <inertial>
+      <origin
+        xyz="-0.00024999 -0.0026573 -0.017319"
+        rpy="0 0 0" />
+      <mass
+        value="0.0057874" />
+      <inertia
+        ixx="2.9022E-07"
+        ixy="-8.5E-13"
+        ixz="-1.338E-13"
+        iyy="3.7265E-07"
+        iyz="-5.6095E-09"
+        izz="3.3565E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link19.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link19.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint19"
+    type="continuous">
+    <origin
+      xyz="0.00164538213704693 -0.00352853337977996 -0.0253407062556731"
+      rpy="-0.320231489354249 0 -2.70526034059121" />
+    <parent
+      link="link18" />
+    <child
+      link="link19" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="link20">
+    <inertial>
+      <origin
+        xyz="-0.0002594 0.013314 -0.00041412"
+        rpy="0 0 0" />
+      <mass
+        value="0.0040861" />
+      <inertia
+        ixx="1.9595E-07"
+        ixy="-1.1739E-11"
+        ixz="1.4135E-10"
+        iyy="1.6877E-07"
+        iyz="1.3969E-08"
+        izz="1.7862E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link20.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://el_hand/meshes/link20.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
