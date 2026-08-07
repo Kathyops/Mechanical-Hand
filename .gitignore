@@ -1,6 +1,7 @@
 build/
 install/
 log/
+<<<<<<< HEAD
 devel/
 __pycache__/
 *.pyc
@@ -15,3 +16,7 @@ __pycache__/
 *.SLDASM
 *.SLDPRT
 *.SLDDRW
+=======
+*.pyc
+__pycache__/
+>>>>>>> c4368dd (Initial commit: ROS2 mechanical hand)
