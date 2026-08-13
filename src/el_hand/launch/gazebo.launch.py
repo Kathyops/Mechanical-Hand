@@ -1,7 +1,7 @@
 import os
 
 from ament_index_python.packages import get_package_share_directory
-
+from launch.actions import IncludeLaunchDescription, TimerAction
 from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch.actions import IncludeLaunchDescription
@@ -59,28 +59,57 @@ def generate_launch_description():
     )
 
 
-    spawn_entity = Node(
-    package='gazebo_ros',
-    executable='spawn_entity.py',
-    arguments=[
-        '-entity',
-        'mechanical_hand',
-        '-topic',
-        'robot_description',
-        '-x',
-        '0',
-        '-y',
-        '0',
-        '-z',
-        '1.0'
-    ],
-    output='screen'
+    spawn_entity = TimerAction(
+    period=3.0,
+    actions=[
+        Node(
+            package='gazebo_ros',
+            executable='spawn_entity.py',
+            arguments=[
+                '-entity',
+                'mechanical_hand',
+                '-topic',
+                'robot_description',
+                '-x',
+                '0',
+                '-y',
+                '0',
+                '-z',
+                '1.0'
+            ],
+            output='screen'
+        )
+    ]
 )
 
+    
+    joint_state_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[
+            "joint_state_broadcaster",
+            "-c",
+            "/controller_manager"
+     ],
+)
+
+    
+    hand_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[
+            "hand_controller",
+            "-c",
+            "/controller_manager"
+        ],
+
+ )
 
     return LaunchDescription([
         gazebo_server,
         gazebo_client,
         robot_state_publisher,
-        spawn_entity
+        spawn_entity,
+        joint_state_broadcaster_spawner,
+        hand_controller_spawner
     ])

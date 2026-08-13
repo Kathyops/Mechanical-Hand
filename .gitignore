@@ -20,3 +20,7 @@ __pycache__/
 *.pyc
 __pycache__/
 >>>>>>> c4368dd (Initial commit: ROS2 mechanical hand)
+*.deb
+build/
+install/
+log/

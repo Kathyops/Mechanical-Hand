@@ -4,7 +4,7 @@ import os
 
 def generate_launch_description():
     # 直接使用绝对路径
-    urdf_path = '/home/kathy/Mechanical-Hand/src/el_hand/urdf/mechanical_hand.urdf'
+    urdf_path = '/home/ubuntu/Mechanical-Hand/src/el_hand/urdf/mechanical_hand.urdf'
     
     with open(urdf_path, 'r') as f:
         robot_description = f.read()
