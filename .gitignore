@@ -1,26 +1,19 @@
+# 编译产物
 build/
 install/
 log/
-<<<<<<< HEAD
-devel/
-__pycache__/
-*.pyc
+
+# IDE 配置
 .vscode/
 .idea/
-.rviz/
-.rviz2/
+
+# Gazebo 缓存
 .gazebo/
-*.bak
+
+# ROS 日志
+.ros/
+
+# 临时文件
+*.pyc
 *.swp
 *~
-*.SLDASM
-*.SLDPRT
-*.SLDDRW
-=======
-*.pyc
-__pycache__/
->>>>>>> c4368dd (Initial commit: ROS2 mechanical hand)
-*.deb
-build/
-install/
-log/

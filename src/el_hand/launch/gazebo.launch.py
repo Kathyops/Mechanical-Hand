@@ -6,6 +6,7 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+import xacro
 
 
 def generate_launch_description():
@@ -21,8 +22,7 @@ def generate_launch_description():
     )
 
 
-    with open(urdf_file_path, 'r') as infp:
-        robot_description = infp.read()
+    robot_description = xacro.process_file(urdf_file_path).toxml()
 
 
     gazebo_server = IncludeLaunchDescription(
@@ -75,7 +75,7 @@ def generate_launch_description():
                 '-y',
                 '0',
                 '-z',
-                '1.0'
+                '0.0'
             ],
             output='screen'
         )

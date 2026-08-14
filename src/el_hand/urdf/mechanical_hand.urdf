@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
-<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
-     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
-     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="El montaj.SLDASM">
+  <link name="world" />
+  <joint name="world_to_base" type="fixed">
+    <origin xyz="0 0 0.1" rpy="0 0 0" />
+    <parent link="world" />
+    <child link="base_link" />
+  </joint>
   <link
     name="base_link">
     <inertial>
@@ -86,8 +89,8 @@
     name="joint1"
     type="continuous">
   <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="-0.0418212540784975 0.0184231163215674 -0.00851"
       rpy="-3.14159265358979 0 2.93179136418074" />
@@ -147,8 +150,8 @@
     name="joint2"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="0.00382887014746408 0.0145428170872257 -0.00881000000000001"
       rpy="0 0 2.8841523488494" />
@@ -208,8 +211,8 @@
     name="joint3"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="0 -0.0298393000000001 -0.00116735365277102"
       rpy="1.5707963267949 -0.162732677433086 1.5707963267949" />
@@ -269,8 +272,8 @@
     name="joint4"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="-0.0177643205839322 0.00731437690468434 0"
       rpy="1.5707963267949 0 1.0707980467293" />
@@ -330,8 +333,8 @@
     name="joint5"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="-0.0197337205232873 0.0293880132420128 -0.0085"
       rpy="0 0 -0.0986985436548291" />
@@ -391,8 +394,8 @@
     name="joint6"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="-0.00166971116875508 0.0172630182903669 0.00880000000000001"
       rpy="-3.01676322733167 0 0.0964219229542798" />
@@ -452,8 +455,8 @@
     name="joint7"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="-4.83520540846723E-05 -0.0476828794976062 0.000345071618396711"
       rpy="1.57079632679491 0.104215934826509 1.57079632679501" />
@@ -513,8 +516,8 @@
     name="joint8"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="-0.0110000000000012 0.000999999999999626 0"
       rpy="1.5707963267949 0 1.01645860606183" />
@@ -574,8 +577,8 @@
     name="joint9"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="0.00936474695611754 0.0315704783205368 -0.00855000000000004"
       rpy="0 0 -3.06533087146231" />
@@ -635,8 +638,8 @@
     name="joint10"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="-0.000556162602004938 -0.0233433835200501 0.00905000000000003"
       rpy="3.13201348373222 0 3.11777188213839" />
@@ -696,8 +699,8 @@
     name="joint11"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="0 -0.0377690000000002 -0.00147757420956619"
       rpy="1.5707963267949 0.0616818060554339 1.5707963267949" />
@@ -757,8 +760,8 @@
     name="joint12"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="-0.0242753227358126 -0.00141535766579842 0"
       rpy="1.57079632679489 0 1.68973914251987" />
@@ -818,8 +821,8 @@
     name="joint13"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="0.0343998881180647 0.0289848669019026 -0.00855000000000001"
       rpy="0 0 -3.04164442478677" />
@@ -879,8 +882,8 @@
     name="joint14"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="-0.00208488225397516 -0.0214568288789335 0.00905000000000133"
       rpy="-3.14159265358979 0 3.04473035163629" />
@@ -940,8 +943,8 @@
     name="joint15"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="0.0003616395329709 -0.0478 -0.000900544274469324"
       rpy="1.5707963267949 0 1.57079632679489" />
@@ -1001,8 +1004,8 @@
     name="joint16"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="-0.0110000000000001 0.00100000000000001 0"
       rpy="-1.56462447309586 0 1.5707963267949" />
@@ -1062,8 +1065,8 @@
     name="joint17"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="0.0323716059056896 -0.00269536169902099 0"
       rpy="-0.469823734728666 0 1.48772480012051" />
@@ -1123,8 +1126,8 @@
     name="joint18"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="-0.0120277094480687 -0.0105668183642785 0.000249999999999969"
       rpy="1.5707963267949 -0.0640210405893738 -2.42076146990602" />
@@ -1184,8 +1187,8 @@
     name="joint19"
     type="revolute">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="0.00164538213704705 -0.00352853337978027 -0.0267566782738251"
       rpy="-0.762171171470992 0 -2.70526034059121" />
@@ -1245,8 +1248,8 @@
     name="joint20"
     type="continuous">
     <dynamics 
-    damping="0.2"
-    friction="0.1"/>
+    damping="0.00001"
+    friction="0.0"/>
     <origin
       xyz="0 -0.0018910388177179 -0.028079724957189"
       rpy="-2.38192804458095 0 0" />
@@ -1272,6 +1275,26 @@
 
 </gazebo>
 
+<gazebo reference="link1"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link2"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link3"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link4"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link5"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link6"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link7"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link8"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link9"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link10"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link11"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link12"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link13"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link14"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link15"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link16"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link17"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link18"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link19"><turnGravityOff>true</turnGravityOff></gazebo>
+<gazebo reference="link20"><turnGravityOff>true</turnGravityOff></gazebo>
 
 <ros2_control name="MechanicalHandSystem" type="system">
 
@@ -1407,7 +1430,7 @@
           filename="libgazebo_ros2_control.so">
 
     <parameters>
-      /home/ubuntu/Mechanical-Hand/src/el_hand/config/controllers.yaml
+      /home/ubuntu/Mechanical-Hand2/src/el_hand/config/controllers.yaml
     </parameters>
 
   </plugin>

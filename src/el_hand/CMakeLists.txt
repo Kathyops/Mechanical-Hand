@@ -18,3 +18,8 @@ install(
 ament_package()
 
 
+install(PROGRAMS
+  scripts/teleop.py
+  scripts/joy_teleop.py
+  DESTINATION lib/${PROJECT_NAME}
+)

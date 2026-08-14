@@ -1,14 +1,16 @@
-from launch import LaunchDescription
-from launch_ros.actions import Node
 import os
 
+from ament_index_python.packages import get_package_share_directory
+from launch import LaunchDescription
+from launch_ros.actions import Node
+import xacro
+
+
 def generate_launch_description():
-    # 直接使用绝对路径
-    urdf_path = '/home/ubuntu/Mechanical-Hand/src/el_hand/urdf/mechanical_hand.urdf'
-    
-    with open(urdf_path, 'r') as f:
-        robot_description = f.read()
-    
+    package_path = get_package_share_directory('el_hand')
+    urdf_path = os.path.join(package_path, 'urdf', 'mechanical_hand.urdf')
+    robot_description = xacro.process_file(urdf_path).toxml()
+
     return LaunchDescription([
         Node(
             package='robot_state_publisher',
